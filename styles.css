@@ -1,1 +1,129 @@
-/* font-family: 'Overpass', sans-serif; */
+:root {
+  --primary-orange: hsl(25, 97%, 53%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-light-grey: hsl(217, 12%, 63%);
+  --neutral-medium-grey: hsl(216, 12%, 54%);
+  --neutral-dark-blue: hsl(213, 19%, 18%);
+  --neutral-darker-blue: hsl(216, 12%, 8%);
+  --font-overpass: "Overpass", sans-serif;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-darker-blue);
+  font-family: var(--font-overpass);
+  font-weight: var(--font-weight-400);
+  min-height: 100vh;
+}
+
+p {
+  font-size: 0.938rem;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  /* max-width: 415px; */
+  margin-inline: auto;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(215, 20%, 17%),
+    hsl(216, 24%, 12%)
+  );
+  border-radius: 15px;
+  margin: 0 1.5rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.logo-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: var(--neutral-dark-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.card-content-title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-700);
+  color: var(--neutral-white);
+  margin-bottom: 0.625rem;
+}
+
+.card-content-info {
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: var(--neutral-light-grey);
+  margin-bottom: 1.5rem;
+}
+
+.card-content-rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-700);
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-medium-grey);
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+}
+
+.number:focus {
+  background-color: var(--neutral-medium-grey);
+  color: var(--neutral-white);
+  outline: 0;
+}
+
+.btn-submit {
+  font-weight: var(--font-weight-700);
+  background-color: var(--primary-orange);
+  color: var(--neutral-white);
+  border-radius: 22.5px;
+  border: none;
+  padding: 0.75rem 6.813rem;
+  text-transform: uppercase;
+  letter-spacing: 1.87px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: var(--neutral-white);
+  color: var(--primary-orange);
+}
+
+.btn-submit:focus {
+  outline: 0;
+}
