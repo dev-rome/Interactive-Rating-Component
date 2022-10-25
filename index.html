@@ -23,27 +23,35 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <!-- Rating state start -->
-
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
-    <div class="attribution">
+    <main>
+      <article>
+        <div class="card">
+          <div class="card-content">
+            <div class="logo-wrapper">
+              <img src="/images/icon-star.svg" alt="star logo" />
+            </div>
+            <h1 class="card-content-title">How did we do?</h1>
+            <p class="card-content-info">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+            <div class="card-content-rating">
+              <button id="one" class="number">1</button>
+              <button id="two" class="number">2</button>
+              <button id="three" class="number">3</button>
+              <button id="four" class="number">4</button>
+              <button id="five" class="number">5</button>
+            </div>
+            <button class="btn-submit">Submit</button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
   </body>
 </html>
