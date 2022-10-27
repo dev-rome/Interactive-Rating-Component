@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Interactive rating component](./images/Screen%20Shot%202022-10-26%20at%205.49.04%20PM.png)
 
 ### Links
 
